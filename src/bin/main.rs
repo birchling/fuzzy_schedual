@@ -1,6 +1,4 @@
 use fuzzy_thread_pool::ThreadPool;
-use std::thread;
-use std::time::Duration;
 use rand::{distributions::Uniform, Rng};
 
 fn generate_and_multiply_small_random_vetor(){
@@ -21,5 +19,5 @@ fn main() {
             generate_and_multiply_small_random_vetor();
         });
     }
-
+    println!("Done");
 }
